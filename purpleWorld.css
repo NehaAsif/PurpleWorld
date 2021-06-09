@@ -1,0 +1,393 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+*
+{
+    margin: 0;
+    padding: 0;
+box-sizing:border-box;
+font-family: Poppins;
+
+
+}
+body
+{
+    min-height: 100vh;
+    background:linear-gradient(#0F062D,#220B45);
+
+
+}
+header
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li
+{
+    list-style: none;
+    margin-left: :20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background:#fff;
+    color:#220B45;
+}
+section
+{position: relative;
+    width:100%;
+    height:100vh;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before
+{
+content:'';
+position:absolute;
+
+bottom:0;
+width:100%;
+height: 100px;
+ background:linear-gradient(to top,#0f062d,transparent);
+ z-index: 1000;
+
+}
+section img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+#text{
+    position: absolute;
+    color:#fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+
+    z-index:9;
+}
+section img#mountain{
+    z-index: 10;
+}
+section img#moon{
+    position: absolute;
+}
+#text1{
+    margin-left: 20px;
+    color:#fff;
+    white-space: nowrap;
+    font-size: 4vw;
+    letter-spacing: 7px;
+    z-index: 1;
+}
+#para{
+    z-index: 2;
+}
+.explore{
+    width: 55%;
+    color:#fff;
+    font-family: Poppins;
+    margin: 10px;
+    border: 20px;
+    padding: 20px;
+    float:inline-start;
+    position: relative;
+    font-size: 1.5vw;
+    z-index: 1;
+    
+}
+.explorep{
+    position: absolute;
+    z-index: 1;
+    float:left;
+    margin: 20px;
+    border: 20px;
+    padding: 20px;
+    left: 54%;
+    top:120%;
+
+}
+.rm{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+   max-width: 1200px;
+   flex-wrap: wrap;
+    height: 10px;
+    margin: 50px;
+    border:50px;
+    padding:20px;
+    top: 1300px;
+}
+#memberh{
+    text-decoration: none;
+    justify-content: center;
+align-items: center;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+    width:250px;
+    text-align:center;
+    left:40%;
+    font-size: 6vw;
+
+}
+
+.wrapper{
+    display:flex;
+    width:70%;
+    justify-content: space-around;
+}
+.card{
+    z-index: 1;
+    margin:10px;
+    border: 10px;
+    padding: 10px;
+    width: 280px;
+    height: 360px;
+    left:20%;
+    padding: 4rem 1rem;
+    position:relative;
+    display:flex;
+    align-items: flex-end;
+    box-shadow: 10px 7px 10px rgb(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to bottom,rgba(226, 154, 208, 0.5),rgb(155, 81, 204));
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0%;
+}
+.info{
+    position:relative;
+    z-index: 1000;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.info:hover{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.info h1{
+    margin: 0;
+}
+
+.info p{
+    font-size: 14px;
+    
+    
+    
+}
+h2{
+    display: flex;
+    z-index: 1;
+justify-content: center;
+align-items: center;
+position: relative;
+font-size: 6em;
+letter-spacing: 15px;
+color:#281447 ;
+animation:animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color:#281447;
+        box-shadow: none;
+    }
+   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%, 100%{
+        color:#fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
+.ocean{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    z-index: 1;
+    
+}
+
+.armyt{
+    display:block;
+    margin:40px;
+    color:#fff;
+    font-size: 20px;
+    z-index: 2;
+}
+.fstar img{
+    width:20px;
+    animation:fstars 7s linear infinite;
+}
+.fstar{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 0;
+    bottom:0;
+}
+@keyframes fstars{
+    0%{
+        transform: translateY(0);
+        opacity:0;
+    }
+    50%{
+        
+        opacity:1;
+    }
+    70%{
+        
+        opacity:1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity:0;
+    }
+    
+}
+.fstar img:nth-child(1){
+    animation-delay:2s;
+}
+.fstar img:nth-child(2){
+    animation-delay:1s;
+}
+.fstar img:nth-child(3){
+    animation-delay:2s;
+}
+.fstar img:nth-child(4){
+    animation-delay:4.5s;
+}
+.fstar img:nth-child(5){
+    animation-delay:3.5s;
+}
+.fstar img:nth-child(6){
+    animation-delay:2s;
+}
+.fstar img:nth-child(7){
+    animation-delay:5s;
+}
+.fstar img:nth-child(8){
+    animation-delay:1s;
+}
+.fstar img:nth-child(9){
+    animation-delay:4s;
+}
+.fstar img:nth-child(10){
+    animation-delay:2s;
+}
+.fstar img:nth-child(11){
+    animation-delay:4.5s;
+}
+.fstar img:nth-child(12){
+    animation-delay:6.5s;
+}
+.fstar img:nth-child(13){
+    animation-delay:1s;
+}
+.fstar img:nth-child(14){
+    animation-delay:4s;
+}
+.fstar img:nth-child(15){
+    animation-delay:2s;
+}
+.fstar img:nth-child(16){
+    animation-delay:3s;
+}
+.fstar img:nth-child(17){
+    animation-delay:4s;
+}
+.fstar img:nth-child(18){
+    animation-delay:0.5s;
+}
+.fstar img:nth-child(19){
+    animation-delay:1s;
+}
+.fstar img:nth-child(20){
+    animation-delay:6.5s;
+}
+.fstar img:nth-child(21){
+    animation-delay:1s;
+}
+.footer img{
+    position: relative;
+    margin: 20px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    left:35%;
+    
+}
+
+.footer{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    
+}
+#fot{
+    font-size: 30px;
+    margin: 70px;
+    
+}
+ 
+ 
